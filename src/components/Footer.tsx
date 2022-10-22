@@ -25,7 +25,7 @@ const phone_number = [
 
 
 const Footer = () => {
-  return <footer className="bg-neutral-900 text-slate-300">
+  return <footer className="bg-black text-slate-300">
     <div className="w-full m-auto max-w-7xl py-4 px-6">
     <div className="flex justify-between">
       <div className="flex flex-col">{/* left col  */}
