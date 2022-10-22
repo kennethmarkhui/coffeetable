@@ -22,7 +22,7 @@ const contactNumbers: ContactNumber[] = [
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black text-white">
+    <header className=" top-0 left-0 right-0 bg-black text-white">
       <div className="w-full m-auto max-w-7xl flex items-center justify-between py-4 px-6">
         <div>
           <a href="/">logo</a>
