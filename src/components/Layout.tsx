@@ -1,7 +1,18 @@
-import { ReactNode } from 'react'
+import { Outlet } from 'react-router-dom'
 
-const Layout = ({ children }: { children: ReactNode }): JSX.Element => {
-    return <main>{children}</main>
+import Header from './Header'
+import Footer from './Footer'
+
+const Layout = (): JSX.Element => {
+    return (
+        <>
+            <Header />
+            <main>
+                <Outlet />
+            </main>
+            <Footer />
+        </>
+    )
 }
 
 export default Layout

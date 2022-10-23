@@ -1,3 +1,5 @@
+import { Link as RouterLink } from 'react-router-dom'
+
 interface Link {
     name: string
     to: string
@@ -25,16 +27,16 @@ const Header = (): JSX.Element => {
         <header className=" top-0 left-0 right-0 bg-black text-white">
             <div className="w-full m-auto max-w-7xl flex items-center justify-between py-4 px-6">
                 <div>
-                    <a href="/">logo</a>
+                    <RouterLink to="/">logo</RouterLink>
                 </div>
                 <nav>
                     <ul className="flex flex-wrap gap-4">
                         {navLinks.map((navLink, index) => (
                             <li key={`${navLink.name}-${index}`}>
-                                <a href={navLink.to} className="group">
+                                <RouterLink to={navLink.to} className="group">
                                     {navLink.name}
                                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white"></span>
-                                </a>
+                                </RouterLink>
                             </li>
                         ))}
                     </ul>
