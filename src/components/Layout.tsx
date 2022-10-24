@@ -2,12 +2,14 @@ import { Outlet } from 'react-router-dom'
 
 import Header from './Header'
 import Footer from './Footer'
+import TransparentCard from './cards/TransparentCard'
 
 const Layout = (): JSX.Element => {
     return (
         <>
             <Header />
             <main>
+                <TransparentCard />
                 <Outlet />
             </main>
             <Footer />

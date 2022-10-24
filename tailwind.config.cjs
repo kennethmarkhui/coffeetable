@@ -6,6 +6,11 @@ module.exports = {
             colors: {
                 yellow0: '#ab936b',
             },
+            extend: {
+                backdropBrightness: {
+                    25: '.25',
+                },
+            },
         },
     },
     plugins: [],
