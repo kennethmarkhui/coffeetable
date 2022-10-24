@@ -7,7 +7,11 @@ export interface ITransparentCard {
     button: string
 }
 
-const TransparentCard = ({ title, description, button }: ITransparentCard) => {
+const TransparentCard = ({
+    title,
+    description,
+    button,
+}: ITransparentCard): JSX.Element => {
     return (
         <div className="bg-[url('assets/image/coffee_and_beans.jpg')] max-w-screen-xl h-80 bg-cover bg-center opacity-50 mx-auto my-10">
             <div className="py-10 flex flex-col items-center">

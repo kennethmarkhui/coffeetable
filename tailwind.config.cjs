@@ -11,6 +11,9 @@ module.exports = {
                     25: '.25',
                 },
             },
+            extend: {
+                width: {},
+            },
         },
     },
     plugins: [],
