@@ -2,8 +2,7 @@ import CTA from '../components/CTA'
 import TransparentCard, {
     ITransparentCard,
 } from '../components/cards/TransparentCard'
-import FormCard, { IFormCard } from '../components/cards/FormCard'
-import BlankContainer from '../components/cards/BlankContainer'
+import FormContainer from '../components/cards/FormContainer'
 
 const transparentContent: ITransparentCard = {
     title: 'Book Your Table Now!',
@@ -16,11 +15,7 @@ const Home = (): JSX.Element => {
         <>
             <CTA />
             home page
-            {/*
-                <FormCard placeholder="First Name" />
-                <FormCard placeholder="Last Name" />
-            */}
-            <BlankContainer />
+            <FormContainer />
             <TransparentCard
                 title={transparentContent.title}
                 description={transparentContent.description}
