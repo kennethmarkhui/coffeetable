@@ -1,23 +1,10 @@
-import TransparentCard, {
-    ITransparentCard,
-} from '../components/cards/TransparentCard'
-
-const transparentContent: ITransparentCard = {
-    title: 'Book Your Table Now!',
-    description: 'Your table is waiting, so book today!',
-    button: 'Reserve Your Table',
-}
+import CTA from '../components/CTA'
 
 const Home = (): JSX.Element => {
     return (
-        <div>
-            home page
-            <TransparentCard
-                title={transparentContent.title}
-                description={transparentContent.description}
-                button={transparentContent.button}
-            />
-        </div>
+        <>
+            <CTA />
+        </>
     )
 }
 

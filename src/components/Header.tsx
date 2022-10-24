@@ -26,11 +26,10 @@ const contactNumbers: ContactNumber[] = [
 
 const Header = (): JSX.Element => {
     return (
-        <header className=" top-0 left-0 right-0 bg-black">
+        <header className="fixed top-0 left-0 right-0 bg-black">
             <div className="w-full m-auto max-w-7xl flex items-center justify-between py-4 px-6">
                 <div>
                     <RouterLink to="/">
-                        logo1
                         <div className="flex w-40 h-40">
                             <img src={Logo} alt="Logo" />
                         </div>
