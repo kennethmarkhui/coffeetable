@@ -1,5 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom'
 import Logo from '../assets/logo/Coffee_table.png'
+import Button from './Button'
 
 interface Link {
     name: string
@@ -25,7 +26,7 @@ const contactNumbers: ContactNumber[] = [
 
 const Header = (): JSX.Element => {
     return (
-        <header className=" top-0 left-0 right-0 bg-black text-white">
+        <header className=" top-0 left-0 right-0 bg-black">
             <div className="w-full m-auto max-w-7xl flex items-center justify-between py-4 px-6">
                 <div>
                     <RouterLink to="/">
@@ -49,12 +50,9 @@ const Header = (): JSX.Element => {
                 </nav>
                 <div className="flex flex-col gap-2">
                     {contactNumbers.map((contactNumber, index) => (
-                        <div
+                        <Button
                             key={index}
-                            className="py-2 px-4 border-4 border-[#ab936b]"
-                        >
-                            {`${contactNumber.name}: ${contactNumber.number}`}
-                        </div>
+                        >{`${contactNumber.name}: ${contactNumber.number}`}</Button>
                     ))}
                 </div>
             </div>

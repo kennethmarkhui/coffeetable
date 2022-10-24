@@ -1,0 +1,53 @@
+[33mcommit a5d1a15d1952fda8096cd7b5af8d923b3dc82402[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Wisely <wiselychung96@gmail.com>
+Date:   Mon Oct 24 13:01:09 2022 +0800
+
+    added transparent card
+
+[33mcommit 6b324e03cfcecb920e364851c0ad3d9a5914d79c[m
+Author: Wisely <wiselychung96@gmail.com>
+Date:   Sun Oct 23 14:27:32 2022 +0800
+
+    added logo
+
+[33mcommit 0ee7b90996243f0506d0290ac736399ee72ff10a[m
+Author: kennethmarkhui <kennethmarkhui@gmail.com>
+Date:   Sun Oct 23 12:37:53 2022 +0800
+
+    implement react-router
+
+[33mcommit 248b721f6e80a855da10050eba861edd1d6d2548[m
+Author: kennethmarkhui <kennethmarkhui@gmail.com>
+Date:   Sat Oct 22 22:10:49 2022 +0800
+
+    implement eslint and prettier
+
+[33mcommit c9e2e49406a3983fbea5e0fb4ba6fb7a8c156928[m
+Author: Wisely <wiselychung96@gmail.com>
+Date:   Sat Oct 22 16:41:35 2022 +0800
+
+    changed bg-neutral -> bg-black
+
+[33mcommit c08aa590f81e70d88c5f43e9070ae95888551093[m
+Author: Wisely <wiselychung96@gmail.com>
+Date:   Sat Oct 22 16:33:16 2022 +0800
+
+    added basic footer
+
+[33mcommit f08beb1cac6d31b3658fa56b7162db0636efb060[m
+Author: kennethmarkhui <kennethmarkhui@gmail.com>
+Date:   Sat Oct 22 16:20:10 2022 +0800
+
+    added basic header
+
+[33mcommit 9079ec8fdc90fe906e76c9f6c7f68a972788350a[m
+Author: kennethmarkhui <kennethmarkhui@gmail.com>
+Date:   Sat Oct 22 14:46:33 2022 +0800
+
+    added tailwind and basic layout
+
+[33mcommit f0b8397914c20939e97a847c1611e2b5dc0ef614[m
+Author: Wisely <wiselychung96@gmail.com>
+Date:   Sat Oct 22 13:54:05 2022 +0800
+
+    initial commit
