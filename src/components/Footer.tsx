@@ -7,7 +7,8 @@ import {
     FaCcPaypal,
 } from 'react-icons/fa'
 import { SiAmericanexpress } from 'react-icons/si'
-import  Logo  from '../assets/Logo/Coffee_table.png';
+
+import Logo from '../assets/Logo/Coffee_table.png'
 
 const branch = [
     {
@@ -32,7 +33,7 @@ const phoneNumber = [
 
 const Footer = (): JSX.Element => {
     return (
-        <footer className="bg-black text-slate-300">
+        <footer className="bg-black">
             <div className="w-full m-auto max-w-7xl py-4 px-6">
                 <div className="flex justify-between">
                     <div className="flex flex-col">
@@ -57,10 +58,10 @@ const Footer = (): JSX.Element => {
 
                     <div className="">
                         {/* center col  */}
-                        <div className = "flex w-40 h-40">
-                            <img src={Logo} alt ="Logo" />
+                        <div className="flex w-40 h-40">
+                            <img src={Logo} alt="Logo" />
                         </div>
-                        
+
                         <div className="flex gap-3">
                             <div>
                                 <FaInstagram size={'2em'} />
