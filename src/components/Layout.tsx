@@ -9,7 +9,6 @@ const Layout = (): JSX.Element => {
         <>
             <Header />
             <main>
-                <TransparentCard />
                 <Outlet />
             </main>
             <Footer />
