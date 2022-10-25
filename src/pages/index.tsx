@@ -8,6 +8,7 @@ import FormContainer, {
 import ClientExperienceCard, {
     IClientExperienceCard,
 } from '../components/cards/ClientExperienceCard'
+import WhereAreWe from '../components/WhereAreWe'
 
 const transparentContent: ITransparentCard = {
     title: 'Book Your Table Now!',
@@ -32,6 +33,7 @@ const Home = (): JSX.Element => {
     return (
         <>
             <CTA />
+            <WhereAreWe />
             <ClientExperienceCard
                 title={ClientExperienceContent.title}
                 subject={ClientExperienceContent.subject}
