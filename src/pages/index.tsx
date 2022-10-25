@@ -5,7 +5,9 @@ import TransparentCard, {
 import FormContainer, {
     IFormContainer,
 } from '../components/cards/FormContainer'
-import ClientExperienceCard from '../components/cards/ClientExperienceCard'
+import ClientExperienceCard, {
+    IClientExperienceCard,
+} from '../components/cards/ClientExperienceCard'
 
 const transparentContent: ITransparentCard = {
     title: 'Book Your Table Now!',
@@ -20,11 +22,21 @@ const FormContainerContent: IFormContainer = {
         'We are located in Hobart and Moonah, and you can book a table at one of our delightful cafes via email or our contact form. We would love to hear from you and provide you with the best start, break, or end of your day. Grab a quick coffee or enjoy the pleasures of our extensive menu today!',
 }
 
+const ClientExperienceContent: IClientExperienceCard = {
+    title: 'testimonials',
+    subject: "Client's Experience",
+    testimonies: 'sarap sarap naman ng food',
+}
+
 const Home = (): JSX.Element => {
     return (
         <>
             <CTA />
-            <ClientExperienceCard />
+            <ClientExperienceCard
+                title={ClientExperienceContent.title}
+                subject={ClientExperienceContent.subject}
+                testimonies={ClientExperienceContent.testimonies}
+            />
             home page
             <FormContainer
                 title={FormContainerContent.title}
