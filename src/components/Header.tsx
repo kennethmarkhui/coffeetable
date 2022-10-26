@@ -1,6 +1,9 @@
 import { Link as RouterLink } from 'react-router-dom'
-import Logo from '../assets/logo/Coffee_table.png'
+import { HiDevicePhoneMobile } from 'react-icons/hi2'
+import { HiMenu } from 'react-icons/hi'
+
 import Button from './Button'
+import Logo from '../assets/logo/Coffee_table.png'
 
 interface Link {
     name: string
@@ -28,14 +31,16 @@ const Header = (): JSX.Element => {
     return (
         <header className="fixed top-0 left-0 right-0 bg-black">
             <div className="w-full m-auto max-w-7xl flex items-center justify-between py-4 px-6">
-                <div>
-                    <RouterLink to="/">
-                        <div className="flex w-40 h-40">
-                            <img src={Logo} alt="Logo" />
-                        </div>
-                    </RouterLink>
-                </div>
-                <nav>
+                {/* LOGO */}
+                <RouterLink to="/">
+                    <div className="flex w-20 lg:w-40">
+                        <img src={Logo} alt="Logo" />
+                    </div>
+                </RouterLink>
+
+                {/* NAVLINKS */}
+                <HiMenu size="2rem" className="md:hidden order-first" />
+                <nav className="hidden md:block">
                     <ul className="flex flex-wrap gap-4">
                         {navLinks.map((navLink, index) => (
                             <li key={`${navLink.name}-${index}`}>
@@ -47,7 +52,13 @@ const Header = (): JSX.Element => {
                         ))}
                     </ul>
                 </nav>
-                <div className="flex flex-col gap-2">
+
+                {/* CONTACT */}
+                <HiDevicePhoneMobile
+                    className="md:hidden text-yellow0"
+                    size="2rem"
+                />
+                <div className="hidden md:flex md:flex-col gap-2">
                     {contactNumbers.map((contactNumber, index) => (
                         <Button
                             key={index}
