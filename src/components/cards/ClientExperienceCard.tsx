@@ -23,10 +23,12 @@ const CustomerExperienceCard = ({
                         <div className="px-6">
                             <FaArrowLeft size={'3em'} />
                         </div>
-
-                        <div className="px-4 text-center w-9/12">
-                            {testimonies}
+                        <div className="">
+                            <div className="px-4 text-center w-9/12">
+                                {testimonies}
+                            </div>
                         </div>
+
                         <div className="px-6">
                             <FaArrowRight size={'3em'} />
                         </div>
