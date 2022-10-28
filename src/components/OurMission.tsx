@@ -3,7 +3,7 @@ import Button from './Button'
 
 const OurMission = () => {
     return (
-        <div className="max-w-screen-xl h-auto mx-auto my-auto p-4 flex flex-row">
+        <div className="max-w-screen-xl h-auto mx-auto my-8 p-4 flex flex-row">
             <div className="basis-1/2">
                 <img src="http://placekitten.com/450/450" alt="" />
                 <img src="http://placekitten.com/150/150" alt="" />

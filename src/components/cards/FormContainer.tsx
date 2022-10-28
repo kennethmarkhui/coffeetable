@@ -23,7 +23,7 @@ const FormContainer = ({
     description,
 }: IFormContainer): JSX.Element => {
     return (
-        <section className="max-w-7xl shadow-md border-none flex flex-col mx-auto gap-10 lg:flex-row">
+        <section className="max-w-7xl shadow-md border-none flex flex-col mx-auto gap-10 lg:flex-row my-16">
             <div className="basis-1/2 bg-black p-8">
                 <div className="space-y-4 pb-8">
                     <FormCard placeholder="First Name" />

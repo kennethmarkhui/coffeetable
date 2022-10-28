@@ -44,7 +44,7 @@ const Home = (): JSX.Element => {
                 subject={ClientExperienceContent.subject}
                 testimonies={ClientExperienceContent.testimonies}
             />
-            home page
+
             <FormContainer
                 title={FormContainerContent.title}
                 subject={FormContainerContent.subject}

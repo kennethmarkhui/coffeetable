@@ -11,6 +11,11 @@ module.exports = {
                     25: '.25',
                 },
             },
+            theme: {
+                minHeight: {
+                    '1/2': '50%',
+                },
+            },
         },
     },
     plugins: [],
