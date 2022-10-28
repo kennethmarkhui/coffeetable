@@ -10,6 +10,7 @@ import ClientExperienceCard, {
 } from '../components/cards/ClientExperienceCard'
 import WhereAreWe from '../components/WhereAreWe'
 import InfoCard from '../components/InfoCard'
+import OurMission from '../components/OurMission'
 
 const transparentContent: ITransparentCard = {
     title: 'Book Your Table Now!',
@@ -35,6 +36,7 @@ const Home = (): JSX.Element => {
         <>
             <CTA />
             <InfoCard />
+            <OurMission />
             <WhereAreWe />
             <ClientExperienceCard
                 title={ClientExperienceContent.title}

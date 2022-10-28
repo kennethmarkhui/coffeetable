@@ -1,6 +1,8 @@
+import Button from './Button'
+
 const InfoCard = () => {
     return (
-        <div className="bg-black max-w-screen-xl h-auto mx-auto">
+        <div className="bg-black max-w-screen-xl h-auto mx-auto my-auto">
             <div className="flex flex-row text-center p-5">
                 <div className="basis-1/4">
                     <div className="mx-auto rounded-full bg-gray-600 w-20 h-20">
@@ -18,7 +20,7 @@ const InfoCard = () => {
 
                 <div className="basis-1/4">
                     <div className="mx-auto rounded-full bg-gray-600 w-20 h-20">
-                        2
+                        <div className="">2</div>
                     </div>
                     <div className="text-4xl p-2">Trained Chef</div>
                     <div className="p-4">
@@ -55,7 +57,11 @@ const InfoCard = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center p-4">yes</div>
+            <div className="p-4">
+                <Button className="flex my-4 mx-auto justify-center py-4">
+                    See Our Menu
+                </Button>
+            </div>
         </div>
     )
 }
