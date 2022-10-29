@@ -1,36 +1,38 @@
 import divider from '../assets/image/divider.png'
 import Button from './Button'
 
-const OurMission = () => {
+const OurMission = (): JSX.Element => {
     return (
-        <div className="max-w-screen-xl h-auto mx-auto my-8 p-4 flex flex-row">
-            <div className="basis-1/2">
+        <section className="max-w-screen-xl mx-auto my-8 p-4 flex flex-col lg:flex-row gap-4">
+            <div className="flex-1 mx-auto">
                 <img src="http://placekitten.com/450/450" alt="" />
                 <img src="http://placekitten.com/150/150" alt="" />
                 <div className="text-yellow0 text-7xl">Since 2017</div>
             </div>
 
-            <div className="basis-1/2 space-y-3 p-4">
-                <div className="text-yellow0 text-4xl py-4">Who are we</div>
-                <div>Our Mission to provide a Quality Dining Experience</div>
-                <img className="w-72 h-10 flex" src={divider}></img>
-                <div className="py-4">
+            <div className="flex flex-col sm:items-center lg:items-start flex-1 gap-4">
+                <p className="text-yellow0">Who are we</p>
+                <h1 className="text-2xl md:text-4xl">
+                    Our Mission to provide a Quality Dining Experience
+                </h1>
+                <img className="w-72 h-10" src={divider} />
+                <p className="text-sm md:text-base sm:text-center lg:text-left">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Ratione, nisi. Non ipsa ratione, perspiciatis nisi porro
                     fugiat unde dolor assumenda, reiciendis, nemo libero
                     architecto et fugit voluptatem accusamus. Necessitatibus,
                     culpa?
-                </div>
-                <div className="py-4">
+                </p>
+                <p className="text-sm md:text-base sm:text-center lg:text-left">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
                     ea neque culpa consequatur quasi facilis officiis laboriosam
                     quam voluptas? Possimus?
-                </div>
-                <div className="py-6">
+                </p>
+                <div>
                     <Button>Discover Our Menu</Button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

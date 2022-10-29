@@ -9,7 +9,7 @@ import ClientExperienceCard, {
     IClientExperienceCard,
 } from '../components/cards/ClientExperienceCard'
 import WhereAreWe from '../components/WhereAreWe'
-import InfoCard from '../components/InfoCard'
+import InfosCard from '../components/InfosCard'
 import OurMission from '../components/OurMission'
 
 const transparentContent: ITransparentCard = {
@@ -36,7 +36,7 @@ const Home = (): JSX.Element => {
     return (
         <>
             <CTA />
-            <InfoCard />
+            <InfosCard />
             <OurMission />
             <WhereAreWe />
             <ClientExperienceCard

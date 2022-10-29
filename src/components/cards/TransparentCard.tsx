@@ -13,16 +13,14 @@ const TransparentCard = ({
     button,
 }: ITransparentCard): JSX.Element => {
     return (
-        <div className="bg-[url('assets/image/coffee_and_beans.jpg')] max-w-screen-xl h-80 bg-neutral-900 bg-cover bg-no-repeat bg-blend-multiply bg-center mx-auto my-16">
-            <div className="py-10 flex flex-col items-center">
-                <div className="flex justify-center text-4xl py-3">{title}</div>
-                <img className="w-72 h-10 flex" src={divider}></img>
-                <div className="flex justify-center text-2xl py-4">
-                    {description}
-                </div>
+        <section className="bg-[url('assets/image/coffee_and_beans.jpg')] max-w-screen-xl bg-neutral-900 bg-cover bg-no-repeat bg-blend-multiply bg-center mx-auto my-16">
+            <div className="py-10 px-8 flex flex-col items-center gap-4 text-center">
+                <h1 className="text-2xl md:text-4xl">{title}</h1>
+                <img className="w-72" src={divider} />
+                <div className="text-xl md:text-2xl">{description}</div>
                 <Button>{button}</Button>
             </div>
-        </div>
+        </section>
     )
 }
 
