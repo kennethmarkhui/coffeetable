@@ -16,11 +16,11 @@ const CustomerExperienceCard = ({
     testimonies,
 }: IClientExperienceCard): JSX.Element => {
     return (
-        <section className="max-w-full shadow-md border-none bg-black grid auto-rows-fr xl:grid-cols-2">
+        <section className="w-full shadow-md border-none bg-black grid auto-rows-fr xl:grid-cols-2">
             <div className="flex flex-col gap-4 p-8">
                 <p className="text-yellow0">{title}</p>
                 <h1 className="text-2xl md:text-4xl">{subject}</h1>
-                <img className="w-72 mx-auto pt-20" src={divider} />
+                <img className="w-72 mx-auto pt-20 " src={divider} />
 
                 <div className="py-16 xl:py-32 flex justify-center">
                     <div className="flex flex-row justify-center gap-4">
