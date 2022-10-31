@@ -28,8 +28,11 @@ const FormContainerContent: IFormContainer = {
 const ClientExperienceContent: IClientExperienceCard = {
     title: 'testimonials',
     subject: "Client's Experience",
-    testimonies:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed cum, eligendi veritatis expedita eaque reprehenderit facilis sunt quis dicta est voluptatibus in blanditiis. Voluptatem blanditiis qui ratione aut corporis.',
+    testimonies: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, aperiam maiores cum quos atque nemo sequi tempore laboriosam ab quas nostrum quo, sed delectus aliquid.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae error, incidunt similique aliquam maiores amet nam.',
+        ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consequatur sapiente qui sed ab quasi quo temporibus tempore? Doloremque tempora facilis, porro aut asperiores nobis vero at, ea qui eos impedit similique adipisci voluptas nulla fugit deleniti. Deleniti, tempora iure. Ullam, placeat similique.',
+    ],
 }
 
 const Home = (): JSX.Element => {
