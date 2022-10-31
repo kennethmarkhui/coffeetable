@@ -1,4 +1,4 @@
-import CTA from '../components/CTA'
+import Hero, { IHero } from '../components/Hero'
 import TransparentCard, {
     ITransparentCard,
 } from '../components/cards/TransparentCard'
@@ -12,7 +12,15 @@ import WhereAreWe from '../components/WhereAreWe'
 import InfosCard from '../components/InfosCard'
 import OurMission from '../components/OurMission'
 
-const transparentContent: ITransparentCard = {
+const homeHeroContent: IHero = {
+    title: 'dandy day, dandy start',
+    subject: 'Artisan Coffee & Fine Food in Tasmania',
+    description:
+        'If you live in Hobart or Moonah, we have two quaint locations in the heart of Tasmania. We offer a beautiful range of drinks and food for all pallets, and we cater to any dietary requirements.',
+    buttonText: 'Book a Table Today!',
+}
+
+const homeTransparentContent: ITransparentCard = {
     title: 'Book Your Table Now!',
     description: 'Your table is waiting, so book today!',
     button: 'Reserve Your Table',
@@ -38,7 +46,12 @@ const ClientExperienceContent: IClientExperienceCard = {
 const Home = (): JSX.Element => {
     return (
         <>
-            <CTA />
+            <Hero
+                title={homeHeroContent.title}
+                subject={homeHeroContent.subject}
+                description={homeHeroContent.description}
+                buttonText={homeHeroContent.buttonText}
+            />
             <InfosCard />
             <OurMission />
             <WhereAreWe />
@@ -54,9 +67,9 @@ const Home = (): JSX.Element => {
                 description={FormContainerContent.description}
             />
             <TransparentCard
-                title={transparentContent.title}
-                description={transparentContent.description}
-                button={transparentContent.button}
+                title={homeTransparentContent.title}
+                description={homeTransparentContent.description}
+                button={homeTransparentContent.button}
             />
         </>
     )
