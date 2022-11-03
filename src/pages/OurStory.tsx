@@ -3,6 +3,7 @@ import TransparentCard, {
     ITransparentCard,
 } from '../components/cards/TransparentCard'
 import divider from '../assets/image/divider.png'
+import Button from '../components/Button'
 
 const ourStoryHeroContent: IHero = {
     subject: 'Find Out More about Your Local Cafe Owners',
@@ -21,6 +22,48 @@ const OurStory = (): JSX.Element => {
     return (
         <>
             <Hero subject={ourStoryHeroContent.subject} />
+            <div className="bg-black max-w-screen-xl mx-auto my-6">
+                <div className="grid grid-cols-4 gap-4">
+                    <img
+                        src="http://placekitten.com/550/550"
+                        alt=""
+                        className="col-span-2 p-8"
+                    />
+                    <div>
+                        <div className="p-8 text-2xl">
+                            WHO ARE DANDY LANE CAFE
+                        </div>
+                        <img className="w-72 p-8" src={divider} />
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quod atque possimus aspernatur amet, earum
+                            labore commodi beatae itaque ipsum fugit velit
+                            impedit sed, consectetur mollitia tenetur aliquam ex
+                            quia reiciendis autem sunt dolores odit numquam
+                            nostrum nisi. Sunt ullam aperiam eveniet temporibus
+                            nemo, minus suscipit doloremque officiis impedit ea
+                            dolore.
+                        </div>
+                        <Button className="my-4">Book now</Button>
+                    </div>
+                    <div>
+                        <div className="p-8">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Unde asperiores laborum doloremque perferendis
+                            eos excepturi ratione ea dolore distinctio,
+                            consectetur doloribus quisquam ducimus sequi illo,
+                            ipsum temporibus dicta! Voluptates, accusamus vitae
+                            possimus voluptatum aliquid iste id odit error et
+                            fugit!
+                        </div>
+                        <img
+                            src="http://placekitten.com/550/550"
+                            alt=""
+                            className="col-span-1 p-8"
+                        />
+                    </div>
+                </div>
+            </div>
             <div className="bg-black max-w-screen-xl mx-auto">
                 <div className="flex flex-row ">
                     <div className="basis-1/2 gap-4">
