@@ -13,10 +13,10 @@ import InfosCard from '../components/InfosCard'
 import OurMission from '../components/OurMission'
 
 const homeHeroContent: IHero = {
-    title: 'dandy day, dandy start',
+    title: 'Placeholder, kitten, cofffee',
     subject: 'Artisan Coffee & Fine Food in Tasmania',
     description:
-        'If you live in Hobart or Moonah, we have two quaint locations in the heart of Tasmania. We offer a beautiful range of drinks and food for all pallets, and we cater to any dietary requirements.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
     buttonText: 'Book a Table Today!',
 }
 
@@ -30,7 +30,7 @@ const FormContainerContent: IFormContainer = {
     title: 'We are just a phone call away',
     subject: 'Book your table today',
     description:
-        'We are located in Hobart and Moonah, and you can book a table at one of our delightful cafes via email or our contact form. We would love to hear from you and provide you with the best start, break, or end of your day. Grab a quick coffee or enjoy the pleasures of our extensive menu today!',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
 }
 
 const ClientExperienceContent: IClientExperienceCard = {

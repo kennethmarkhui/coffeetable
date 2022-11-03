@@ -10,7 +10,7 @@ const ourStoryHeroContent: IHero = {
 }
 
 const ourStoryTransparentContent: ITransparentCard = {
-    title: 'Have a Dandy Start to Your Day!',
+    title: 'The top of the morning to you!',
     description:
         'Book your table now, and your tastes buds will be thanking you!',
     button: 'Contact Us',
@@ -30,9 +30,7 @@ const OurStory = (): JSX.Element => {
                         className="col-span-2 p-8"
                     />
                     <div>
-                        <div className="p-8 text-2xl">
-                            WHO ARE DANDY LANE CAFE
-                        </div>
+                        <div className="p-8 text-2xl">WHO ARE COFFEE TABLE</div>
                         <img className="w-72 p-8" src={divider} />
                         <div>
                             Lorem ipsum dolor sit amet consectetur adipisicing

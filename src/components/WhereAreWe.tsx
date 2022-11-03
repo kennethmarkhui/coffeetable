@@ -9,13 +9,12 @@ const WhereAreWe = (): JSX.Element => {
                     <img className="w-72" src={divider} />
                 </div>
                 <p className="text-sm md:text-base">
-                    Our café is located in two areas, Hobart and Moonah. You can
-                    find our café in Hobart hidden away in Collins Court
-                    opposite JB HI-FI Hobart. If you’re looking for our Moonah
-                    store, we are on the main road and can’t be missed. Please
-                    use the map below to see our two locations if you need
-                    directions. Trust us when we say: you won’t want to miss a
-                    dining experience like Dandy Lane Café.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis ab dolores earum mollitia fugit minima id! Amet impedit
+                    nobis natus eos magnam expedita dolores mollitia
+                    perspiciatis minima, molestiae illum ex quisquam itaque
+                    aperiam commodi fugiat doloremque consectetur. Repudiandae,
+                    natus voluptates officia quisquam ex itaque sapiente?
                 </p>
                 <div className="grid md:grid-cols-2 gap-8 mx-auto">
                     <img src="http://placekitten.com/500/400" alt="" />
