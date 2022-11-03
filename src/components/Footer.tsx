@@ -9,24 +9,28 @@ import {
 import { SiAmericanexpress } from 'react-icons/si'
 import Logo from '../assets/logo/Coffee_table.png'
 
-const branch = [
+export const branch = [
     {
         branch1: 'email1@gmail.com',
         branch2: 'email2@gmail.com',
     },
 ]
 
-const email = [
-    {
-        email1: 'email1@gmail.com',
-        email2: 'email2@gmail.com',
-    },
-]
+export const email = ['email1@gmail.com', 'email2@gmail.com']
 
-const phoneNumber = [
+interface PhoneNumber {
+    name: string
+    number: number
+}
+
+export const phoneNumber: PhoneNumber[] = [
     {
-        number1: '09172413900',
-        number2: '09766452934',
+        name: 'some',
+        number: 943223541,
+    },
+    {
+        name: 'thing',
+        number: 943223542,
     },
 ]
 
@@ -39,12 +43,11 @@ const Footer = (): JSX.Element => {
                         {/* left col  */}
                         <div>CONTACT INFORMATION</div>
                         <div>Phone:</div>
-                        <div className="text-yellow0">
-                            {phoneNumber.map((number) => number.number1)}
-                        </div>
-                        <div className="text-yellow0">
-                            {phoneNumber.map((number) => number.number1)}
-                        </div>
+                        {phoneNumber.map((number, index) => (
+                            <div key={index} className="text-yellow0">
+                                {number.number}
+                            </div>
+                        ))}
                         <div>Address1</div>
                         <div>Address2</div>
                         <div className="flex">
@@ -81,12 +84,12 @@ const Footer = (): JSX.Element => {
                         <div>Sat - Sun 9:00am - 2:00pm</div>
                         <div>Public holidays: Closed</div>
                         <div>FOR BOOKINGS</div>
-                        <div className="text-yellow0">
-                            {email.map((email) => email.email1)}
-                        </div>
-                        <div className="text-yellow0">
-                            {email.map((email) => email.email2)}
-                        </div>
+
+                        {email.map((email) => (
+                            <div key={email} className="text-yellow0">
+                                {email}
+                            </div>
+                        ))}
                     </div>
                 </div>
 

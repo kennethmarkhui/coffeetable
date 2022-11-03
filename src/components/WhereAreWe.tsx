@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css'
 
 import divider from '../assets/image/divider.png'
 
-type Coordinate = [number, number]
+export type Coordinate = [number, number]
 
 const coordinates: Coordinate[] = [
     [51.505, -0.09],

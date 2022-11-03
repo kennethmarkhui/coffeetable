@@ -4,6 +4,8 @@ import TransparentCard, {
 } from '../components/cards/TransparentCard'
 import FormCard from '../components/cards/FormCard'
 import Button from '../components/Button'
+import BusinessCard from '../components/BusinessCard'
+
 const contactUsHeroContent: IHero = {
     subject: "Book Your Table; we Can't Wait To See You!",
 }
@@ -19,6 +21,7 @@ const ContactUs = (): JSX.Element => {
     return (
         <>
             <Hero subject={contactUsHeroContent.subject} />
+            <BusinessCard />
             <div className=" bg-black p-8 max-w-7xl shadow-md border-none mx-auto gap-10 lg:flex-row my-16">
                 <div className="flex flex-row">
                     <div className="basis-1/2 pr-6">
