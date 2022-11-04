@@ -14,14 +14,13 @@ const CustomerExperienceCard = ({
     testimonies,
 }: IClientExperienceCard): JSX.Element => {
     return (
-        <section className="w-full shadow-md border-none bg-black grid auto-rows-fr xl:grid-cols-2">
-            <div className="flex flex-col gap-4 p-8">
+        <section className="w-full shadow-md border-none bg-black flex flex-col xl:flex-row">
+            <div className="flex flex-col gap-4 p-8 flex-1">
                 <p className="text-yellow0">{title}</p>
                 <h1 className="text-2xl md:text-4xl">{subject}</h1>
                 <img className="w-72 place-self-center" src={divider} />
                 <Carousel
-                    // TODO maybe fix this hacky way to set the width (max-w-[327px] sm:max-w-none)
-                    className="max-w-[327px] sm:max-w-none place-self-center"
+                    className="w-full place-self-center"
                     showThumbs={false}
                     showStatus={false}
                 >
@@ -35,7 +34,7 @@ const CustomerExperienceCard = ({
                     ))}
                 </Carousel>
             </div>
-            <span className="bg-[url('http://placekitten.com/1200/1200')] bg-cover bg-center" />
+            <span className="bg-[url('http://placekitten.com/1200/1200')] bg-cover bg-center flex-1 min-h-[300px]" />
         </section>
     )
 }
