@@ -2,6 +2,8 @@ import Hero, { IHero } from '../components/Hero'
 import TransparentCard, {
     ITransparentCard,
 } from '../components/cards/TransparentCard'
+import React, { useState } from 'react'
+import FsLightbox from 'fslightbox-react'
 
 const galleryHeroContent: IHero = {
     subject: 'See Our Delightful Cafe in Action',
@@ -14,6 +16,7 @@ const galleryTransparentContent: ITransparentCard = {
 }
 
 const Gallery = (): JSX.Element => {
+    const [toggler, setToggler] = useState(false)
     return (
         <>
             <Hero subject={galleryHeroContent.subject} />
@@ -23,7 +26,8 @@ const Gallery = (): JSX.Element => {
                     alt="brand"
                     className="mx-auto"
                 />
-                <div className="flex justify-center">
+                {/** 
+                 <div className="flex justify-center">
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                         <img src="http://placekitten.com/250/250" alt="1" />
                         <img src="http://placekitten.com/250/250" alt="2" />
@@ -35,6 +39,35 @@ const Gallery = (): JSX.Element => {
                         <img src="http://placekitten.com/250/250" alt="8" />
                     </div>
                 </div>
+                */}
+
+                <div className="flex justify-center">
+                    <button onClick={() => setToggler(!toggler)}>
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            <img src="http://placekitten.com/250/250" alt="1" />
+                            <img src="http://placekitten.com/250/251" alt="2" />
+                            <img src="http://placekitten.com/250/252" alt="3" />
+                            <img src="http://placekitten.com/250/253" alt="4" />
+                            <img src="http://placekitten.com/250/254" alt="5" />
+                            <img src="http://placekitten.com/250/255" alt="6" />
+                            <img src="http://placekitten.com/250/256" alt="7" />
+                            <img src="http://placekitten.com/250/257" alt="8" />
+                        </div>
+                    </button>
+                </div>
+                <FsLightbox
+                    toggler={toggler}
+                    sources={[
+                        'http://placekitten.com/250/250',
+                        'http://placekitten.com/250/251',
+                        'http://placekitten.com/250/252',
+                        'http://placekitten.com/250/253',
+                        'http://placekitten.com/250/254',
+                        'http://placekitten.com/250/255',
+                        'http://placekitten.com/250/256',
+                        'http://placekitten.com/250/257',
+                    ]}
+                />
             </section>
 
             <TransparentCard
