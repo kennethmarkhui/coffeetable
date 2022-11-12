@@ -1,9 +1,7 @@
 import { ReactNode } from 'react'
 import { FaMapMarkedAlt } from 'react-icons/fa'
 import { FiCoffee } from 'react-icons/fi'
-
-import FormCard from './FormCard'
-import Button from '../Button'
+import Form from '../Form'
 import divider from '../../assets/image/divider.png'
 
 export interface IFormContainer {
@@ -24,15 +22,8 @@ const FormContainer = ({
 }: IFormContainer): JSX.Element => {
     return (
         <section className="max-w-7xl shadow-md border-none flex flex-col mx-auto gap-10 lg:flex-row my-16">
-            <div className="basis-1/2 bg-black p-8">
-                <div className="space-y-4 pb-8">
-                    <FormCard placeholder="First Name" />
-                    <FormCard placeholder="Last Name" />
-                    <FormCard placeholder="Email" />
-                    <FormCard placeholder="Phone" />
-                    <FormCard placeholder="Message" />
-                </div>
-                <Button>{'Submit'}</Button>
+            <div className="basis-1/2 bg-black">
+                <Form />
             </div>
             <div className="basis-1/2 p-8 space-y-8">
                 <div className="space-y-4">
@@ -56,6 +47,7 @@ const FormContainer = ({
         </section>
     )
 }
+
 export default FormContainer
 
 const DescriptiveIcon = ({

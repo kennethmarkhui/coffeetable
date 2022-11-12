@@ -8,31 +8,7 @@ import {
 } from 'react-icons/fa'
 import { SiAmericanexpress } from 'react-icons/si'
 import Logo from '../assets/logo/Coffee_table.png'
-
-export const branch = [
-    {
-        branch1: 'email1@gmail.com',
-        branch2: 'email2@gmail.com',
-    },
-]
-
-export const email = ['email1@gmail.com', 'email2@gmail.com']
-
-interface PhoneNumber {
-    name: string
-    number: number
-}
-
-export const phoneNumber: PhoneNumber[] = [
-    {
-        name: 'some',
-        number: 943223541,
-    },
-    {
-        name: 'thing',
-        number: 943223542,
-    },
-]
+import { email, phoneNumber } from '../data/footer'
 
 const Footer = (): JSX.Element => {
     return (
@@ -50,11 +26,11 @@ const Footer = (): JSX.Element => {
                         ))}
                         <div>Address1</div>
                         <div>Address2</div>
-                        <div className="flex">
-                            <FaCcVisa size={'3em'} />{' '}
-                            <FaCcMastercard size={'3em'} />{' '}
-                            <FaCcPaypal size={'3em'} />{' '}
-                            <SiAmericanexpress size={'3em'} />
+                        <div className="flex items-center gap-2">
+                            <FaCcVisa size={'3em'} />
+                            <FaCcMastercard size={'3em'} />
+                            <FaCcPaypal size={'3em'} />
+                            <SiAmericanexpress size={'2.25em'} />
                         </div>
                     </div>
 

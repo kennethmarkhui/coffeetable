@@ -6,28 +6,7 @@ import { HiMenu } from 'react-icons/hi'
 import Button from './Button'
 import MenuDrawer from './MenuDrawer'
 import Logo from '../assets/logo/Coffee_table.png'
-
-interface Link {
-    name: string
-    to: string
-}
-
-interface ContactNumber {
-    name: string
-    number: number
-}
-
-const navLinks: Link[] = [
-    { name: 'Home', to: '/' },
-    { name: 'Our Story', to: '/our-story' },
-    { name: 'Gallery', to: '/gallery' },
-    { name: 'Contact Us', to: '/contact-us' },
-]
-
-const contactNumbers: ContactNumber[] = [
-    { name: 'Test', number: 123456789 },
-    { name: 'Teste', number: 987654321 },
-]
+import { contactNumbers, navLinks } from '../data/header'
 
 const Header = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)

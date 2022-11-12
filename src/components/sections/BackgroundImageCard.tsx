@@ -1,17 +1,17 @@
-import divider from '../../assets/image/divider.png'
 import Button from '../Button'
+import divider from '../../assets/image/divider.png'
 
-export interface ITransparentCard {
+export interface IBackgroundImageCard {
     title: string
     description: string
     button: string
 }
 
-const TransparentCard = ({
+const BackgroundImageCard = ({
     title,
     description,
     button,
-}: ITransparentCard): JSX.Element => {
+}: IBackgroundImageCard): JSX.Element => {
     return (
         <section className="bg-[url('assets/image/coffee_and_beans.jpg')] max-w-screen-xl bg-neutral-900 bg-cover bg-no-repeat bg-blend-multiply bg-center mx-auto my-16">
             <div className="py-10 px-8 flex flex-col items-center gap-4 text-center">
@@ -24,4 +24,4 @@ const TransparentCard = ({
     )
 }
 
-export default TransparentCard
+export default BackgroundImageCard

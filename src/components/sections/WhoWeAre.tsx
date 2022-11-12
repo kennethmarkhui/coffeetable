@@ -1,7 +1,7 @@
-import divider from '../assets/image/divider.png'
-import Button from './Button'
+import Button from '../Button'
+import divider from '../../assets/image/divider.png'
 
-const OurMission = (): JSX.Element => {
+const WhoWeAre = (): JSX.Element => {
     return (
         <section className="max-w-screen-xl mx-auto my-8 p-4 flex flex-col lg:flex-row gap-4">
             <div className="flex-1 mx-auto">
@@ -36,4 +36,4 @@ const OurMission = (): JSX.Element => {
     )
 }
 
-export default OurMission
+export default WhoWeAre

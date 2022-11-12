@@ -1,18 +1,18 @@
-import divider from '../../assets/image/divider.png'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import divider from '../../assets/image/divider.png'
 
-export interface IClientExperienceCard {
+export interface IClientExperience {
     title: string
     subject: string
     testimonies: string[]
 }
 
-const CustomerExperienceCard = ({
+const ClientExperience = ({
     title,
     subject,
     testimonies,
-}: IClientExperienceCard): JSX.Element => {
+}: IClientExperience): JSX.Element => {
     return (
         <section className="w-full shadow-md border-none bg-black flex flex-col xl:flex-row">
             <div className="flex flex-col gap-4 p-8 flex-1">
@@ -39,4 +39,4 @@ const CustomerExperienceCard = ({
     )
 }
 
-export default CustomerExperienceCard
+export default ClientExperience

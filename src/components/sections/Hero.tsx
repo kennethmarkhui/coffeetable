@@ -1,5 +1,6 @@
-import Button from './Button'
-import divider from '../assets/image/divider.png'
+import Button from '../Button'
+import divider from '../../assets/image/divider.png'
+
 export interface IHero {
     title?: string
     subject: string
@@ -23,7 +24,7 @@ const Hero = ({
                 )}
                 <h1 className="text-2xl md:text-4xl">{subject}</h1>
                 <img className="w-72" src={divider} />
-                {/*<hr className="border-yellow0 w-48" />*/}
+                {/* <hr className="border-yellow0 w-48" /> */}
                 {description !== '' && (
                     <p className="text-sm md:text-base">{description}</p>
                 )}

@@ -1,49 +1,23 @@
-import Hero, { IHero } from '../components/Hero'
-import TransparentCard, {
-    ITransparentCard,
-} from '../components/cards/TransparentCard'
-import FormCard from '../components/cards/FormCard'
-import Button from '../components/Button'
-import BusinessCard from '../components/BusinessCard'
-
-const contactUsHeroContent: IHero = {
-    subject: "Book Your Table; we Can't Wait To See You!",
-}
-
-const contactUsTransparentContent: ITransparentCard = {
-    title: "We're Looking Forward to Seeing You!",
-    description:
-        "Book your table now; trust us, you won't ever forget your experience at Dandy Lane Cafe.",
-    button: 'Contact Us',
-}
+import Hero from '../components/sections/Hero'
+import BusinessCard from '../components/sections/BusinessCard'
+import Form from '../components/Form'
+import BackgroundImageCard from '../components/sections/BackgroundImageCard'
+import { backgroundImageCard, hero } from '../data/contact-us'
 
 const ContactUs = (): JSX.Element => {
     return (
         <>
-            <Hero subject={contactUsHeroContent.subject} />
+            <Hero subject={hero.subject} />
             <BusinessCard />
-            <div className=" bg-black p-8 max-w-7xl shadow-md border-none mx-auto gap-10 lg:flex-row my-16">
-                <div className="flex flex-row">
-                    <div className="basis-1/2 pr-6">
-                        <FormCard placeholder="First Name" />
-                        <FormCard placeholder="Email" />
-                    </div>
-                    <div className="basis-1/2">
-                        <FormCard placeholder="Last Name" />
-                        <FormCard placeholder="Phone" />
-                    </div>
-                </div>
 
-                <div className="space-y-4 pb-8">
-                    <FormCard placeholder="Message" />
-                </div>
-                <Button>{'Submit'}</Button>
-            </div>
+            <section className="bg-black p-8 max-w-7xl shadow-md border-none mx-auto gap-10 lg:flex-row my-16">
+                <Form />
+            </section>
 
-            <TransparentCard
-                title={contactUsTransparentContent.title}
-                description={contactUsTransparentContent.description}
-                button={contactUsTransparentContent.button}
+            <BackgroundImageCard
+                title={backgroundImageCard.title}
+                description={backgroundImageCard.description}
+                button={backgroundImageCard.button}
             />
         </>
     )

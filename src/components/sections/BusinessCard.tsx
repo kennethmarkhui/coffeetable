@@ -1,5 +1,5 @@
-import { email, phoneNumber } from './Footer'
-import Maps from './Maps'
+import Maps from '../Maps'
+import { email, phoneNumber } from '../../data/footer'
 
 const BusinessCard = (): JSX.Element => {
     return (

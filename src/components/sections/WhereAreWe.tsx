@@ -1,5 +1,5 @@
-import divider from '../assets/image/divider.png'
-import Maps from './Maps'
+import Maps from '../Maps'
+import divider from '../../assets/image/divider.png'
 
 const WhereAreWe = (): JSX.Element => {
     return (
